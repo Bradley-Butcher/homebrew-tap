@@ -2,21 +2,21 @@ class Changes < Formula
   desc "A fast, live-updating terminal UI for visualizing git diffs"
   homepage "https://github.com/Bradley-Butcher/Changes"
   license "MIT"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Bradley-Butcher/Changes/releases/download/v#{version}/changes-aarch64-apple-darwin.tar.gz"
-      sha256 "b3977badd25ab5cb60bd85deafe73396d1d83d88188bbf4de3e53e7439a5b3fa"
+      sha256 "8a00e84595e7651735ec76024627f3e82753bf1db394f28b3024726525941fc7"
     else
       url "https://github.com/Bradley-Butcher/Changes/releases/download/v#{version}/changes-x86_64-apple-darwin.tar.gz"
-      sha256 "76971ffff217971cf49dd89b152efe1e2af7cf901baca2a7dc012c3154880e73"
+      sha256 "21526103b514b6a58e5b3f07ae80922eb4e7ecc8a94ad2b8a03d06d18e83b85d"
     end
   end
 
   on_linux do
     url "https://github.com/Bradley-Butcher/Changes/releases/download/v#{version}/changes-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "8c42090d5772849f5ca9c1539f402b1261bf8c1962b084bdcd421fd7db03d453"
+    sha256 "94d09c82d9e638c1792aeef24ea3059c029192ae9f5bba8e5c64b65a197e2bed"
   end
 
   def install
